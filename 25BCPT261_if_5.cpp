@@ -9,3 +9,4 @@ int main()
     else
         printf("a is not divisible by 7");
 }
+
