@@ -36,10 +36,6 @@ int main()
     printf("\nTitle case:%s",a);
     for(int i=0;i<strlen(a);i++)
     {
-        if(a[i]==' ')
-        {}
-        else
-        {
             if(a[i]>='a'&&a[i]<='z')
             {
                 a[i]=a[i]-32;
@@ -49,7 +45,7 @@ int main()
             {
                 a[i]=a[i]+32;
             }
-        }
     }
     printf("\nToggle case:%s",a);
 }
+
