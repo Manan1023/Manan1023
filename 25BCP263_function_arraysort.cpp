@@ -43,3 +43,4 @@ void display(int a[])
         printf("%d ",a[i]);
     }
 }
+
