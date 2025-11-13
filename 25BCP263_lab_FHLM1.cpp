@@ -5,7 +5,7 @@ int main()
 {
     FILE *fpr=NULL;
     char ch;
-    int l=0,a=0,c=0,s=0;
+    int v=0,l=0,a=0,c=0,s=0;
     if((fpr=fopen("my1stfl.dat","r"))==NULL)
     {
         printf("File cant be opened.");
@@ -25,8 +25,16 @@ int main()
             a++;
         }
         ch=fgetc(fpr);
+        if(ch>='a'&&ch<='z')
+        {
+            v++;
+        }
+        if(ch>='A'&&ch<='Z')
+        {
+            v++;
+        }
     }
-    printf("Lines=%d\nWords=%d\nCharacters=%d\nSpaces=%d",l+1,a+1,c,s);
+    printf("Lines=%d\nWords=%d\nCharacters=%d\nSpaces=%d\nVowels=%d",l+1,a+1,c,s,v);
     fclose(fpr);
     printf("\nThe data has been successfully written.\n");
 }
