@@ -5,9 +5,9 @@ int main()
     FILE *fpw=NULL;
     char ch;
     printf("Enter the details at the end put #.\n");
-    fpw=fopen("my1stfl.dat","a");
+    fpw=fopen("my1stfl.c","a");
     ch=fgetc(stdin);
-    while(ch!='#')
+    while(ch!='$')
     {
         fputc(ch,fpw);
         ch=fgetc(stdin);
